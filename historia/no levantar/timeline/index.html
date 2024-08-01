@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="main.css">  
+      
+    <link rel="shortcut icon" href="#" />  
+     <!-- TIMELINE CSS -->  
+    <link rel="stylesheet" href="timeline/css/timeline.min.css">  
+            
+    <title>Tutoriales - Informática DP</title>
+  </head>
+  <body> 
+     <header>
+         <h1 class="text-center text-light">Tutorial</h1>
+         <h2 class="text-center text-light">Cómo usar líneas de tiempo con <span style="color:#7dffc3">TIMELINE.JS</span></h2> 
+      </header>
+     
+    <div style="height:100px"></div>
+    
+    
+    <div class="timeline-container timeline-theme-1">
+        <div class="timeline js-timeline">
+            <div data-time="2008">
+              <img src="img/2008_android.jpg">                  
+            </div>
+            <div data-time="2009">
+              <img src="img/2009_android.jpg">  
+            </div>
+            <div data-time="2010"> 
+            <img src="img/2010_android.jpg">    
+            </div>
+            <div data-time="2011">                
+                <img src="img/2011_android.jpg">    
+            </div>
+            <div data-time="2012">                
+                <img src="img/2012_android.jpg">    
+            </div>
+            <div data-time="2013">                
+                <img src="img/2013_android.jpg">    
+            </div>
+            <div data-time="2014">                
+                <img src="img/2014_android.jpg">    
+            </div>
+            <div data-time="2015">                
+                <img src="img/2015_android.jpg">    
+            </div>
+            <div data-time="2016">                
+                <img src="img/2016_android.jpg">    
+            </div>
+            <div data-time="2017">                
+                <img src="img/2017_android.jpg">    
+            </div>            
+            <div data-time="2018">
+                <img src="img/2018_android.jpg">
+            </div>
+        </div>
+    </div>  
+    
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>      
+      
+    <!-- TIMELINE JS -->            
+    <script src="timeline/js/timeline.min.js"></script>
+      
+    <script>
+        /*Para el funcionamiento básico*/
+//        $('.js-timeline').Timeline();
+        
+        $('.js-timeline').Timeline({
+          autoplay: true,
+          dotsPosition:'bottom',             
+        });
+        
+    </script>  
+      
+  </body>
+</html>
