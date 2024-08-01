@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>E.P.E.T. Nº 3 "Polonia"</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name='Escuela Provincial de Educacion tecnica Nº 3 "Polonia" '>
+
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/logos/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/logos/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Lib CSS -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+
+  <!-- Estilo -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>div[class="disclaimer"]{display:none;}</style>
+ 
+  
+
+
+</head>
+
+<body>
+  <div id="preloader"></div>
+
+  <!--inicio
+  <section id="inicio">
+    <div class="inicio-container">
+      <div class="wow fadeIn">
+        <div class="inicio-logo">
+          <img class="" src="images/logos/epetn3blanco2.png" alt="">
+        </div>
+
+        <h1>Bienvenidos</h1>
+        <h2><span class="rotating">Nuestra misión es tu futuro,El éxito es la suma de pequeños esfurzos repetidos día tras día, Enseñar es dejar huella en la vida de una persona</span></h2>
+        <div class="actions">
+          <a href="#nos" class="btn-get-started">Nosotros</a>
+          <a href="#insc" class="btn-services">Inscripciones</a>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+  <!--encabezado-->
+  <header id="header">
+    <div class="container">
+      <div id="logo" class="pull-left">
+        <a href="#inicio"><img src="images/logos/logoPrincipal.png" alt="" title="" /></img></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li ><a href="index.html">Inicio</a></li>
+         <!-- <li><a href="#nos">Nosotros</a></li>-->
+          <li class="menu-active"><a href="">Horario</a></li>
+         <!---<li><a href="#propuesta">Propuestas academicas</a></li>
+          <li><a href="#act">Actividades</a></li>
+          <li><a href="#contacto">Contacto</a></li>-->
+        </ul>
+      </nav>
+      <!--nav-menu-container -->
+    </div>
+  </header>
+  <!--header -->
+
+  <!--nos-->
+  <section id="nos">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Horario Escolar</h3>
+          <div class="section-title-divider"> </div>
+          <div class="embed-container">
+
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS21HFwc4sIjO093VFu2mlkRhI_QzFEBUZ8HYLsK6mRHHni5Eb1uY3w4iTjCDzm_g/pubhtml" frameborder="0" allowfullscreen></iframe>
+            <br>
+            <br>
+
+          <style>
+            
+          .embed-container {
+              position: relative;
+              padding-bottom: 56.25%;
+              height: 0;
+              overflow: hidden;
+          }
+          .embed-container iframe {
+              position: absolute;
+              top:0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+          }
+          </style>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--inscripciones-->
+
+
+ 
+
+<!--modal video-->
+
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: lightsteelblue;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h5 class="modal-title" id="exampleModalLabel"><strong>Vídeo tutorial</strong> </h5>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col text-center">
+            <strong>Por favor vea el vídeo antes de completar el formulario</strong>
+            <p>En este vídeo vemos algunas cuestiones a tener en cuenta para completar y asegurar la recepción del correo electrónico de confirmación.</p>
+          </div>
+          <div class="col">
+            <!--
+          <div class="embed-responsive embed-responsive-4by3">
+              <iframe id="iframe" class="embed-responsive-item" allowfullscreen></iframe>
+          </div>-->
+          <video controls name="media" width="100%">
+            <source src="images/tuto.mp4" type="video/mp4">
+        </video>
+          </div>
+          <div class="col">
+          </div>
+        </div>                    
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" onclick="insc()">Ir al Formulario</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--modal video-->
+
+
+  <!--suscribete-->
+  <section id="subscribe">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-8">
+          <h3 class="subscribe-title">Suscríbete</h3>
+          <p class="subscribe-text">Mantente al día con todas la cuestiones de nuestra institución</p>
+        </div>
+        <div class="col-md-4 subscribe-btn-container">
+          <a class="subscribe-btn" href="#contacto" onclick="asunto()">Suscribirse</a>
+        </div>
+      </div>
+    </div>
+  </section>
+<script>
+  function asunto(){
+    $("#subject").val('Suscripción');
+    $("#message").val('Hola quiero suscribirme a las noticias de la institución');
+    $("#name").focus();
+  }
+  function insc(){
+    window.location.href="cuenta.html"
+  }
+
+</script>
+  
+<!--modal mapa--->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+      
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.192403836339!2d-55.11583443543128!3d-27.494391124334907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x65a5477e2ecaf671!2sE.P.E.T.%20N%C2%B03!5e0!3m2!1ses-419!2sar!4v1597954917731!5m2!1ses-419!2sar" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+     
+      </div>
+    </div>
+  </div>
+</div>
+ 
+ 
+  <!--contacto-->
+  <section id="contacto">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Contacto</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Si tienes alguna duda, escríbenos<br>
+            
+          </p>        
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-md-push-2">
+          <div class="info">
+            <div data-toggle="tooltip" data-placement="top" title="Haga clic en el icono para abrir el mapa">
+              <i class="fa fa-map-marker" data-toggle="modal" data-target="#exampleModal" ></i>
+              <p>Maipú Nº 876<br>Oberá, Misiones</p>
+            </div>
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>03755-401144</p>
+            </div>
+            <div>
+              <i class="fa fa-envelope"></i>
+            <p>
+              epet3mobera@gmail.com
+            </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 col-md-push-2">
+          <div class="form">
+            <div id="sendmessage">Tu mensaje se envió correctamente.</div>
+            <div id="errormessage"></div>
+            <form id="form1" action="" method="post" role="form" class="contactForm">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Por favor ingrese al menos 4 caracteres" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Correo electronico" data-rule="email" data-msg="Ingresa un Correo Valido" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Por favor ingrese al menos 8 caracteres del tema" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" id="message" rows="5" data-rule="required" data-msg="Por favor escribe algo para nosotros" placeholder="Mensaje"></textarea>
+                <div class="validation"></div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar mensaje</button></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="licencia">
+           <strong>Escuela Provincial de Educación Técnica Nº 3 "Polonia"</strong><span> 2020</span>
+              <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">licencia de Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional</a>.
+          </div>
+          <div class="creditos">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="contactform/contactform.js"></script>
+  <div class="ultimo"></div>
+</body>
+</html>
