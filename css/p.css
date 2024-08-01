@@ -1,0 +1,303 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  --background-color: #fff;/* hsl(180, 20%, 90%);*/
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  min-height: 100vh;
+  padding: 2rem;
+
+  color: hsla(0, 0%, 0%, .9);
+  background: #FFF;/*var(--background-color);*/
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2rem;
+  padding-top: 2rem;
+}
+
+h1+p {
+  font-size: 1.5rem;
+  padding: 2rem 0 3rem;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  margin: 2rem;
+
+  transform-style: preserve-3d;
+  transform: perspective(100rem);
+
+  cursor: pointer;
+}
+
+.container {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+  width: 65rem;/*50rem;*/
+  height: 50rem;/*56rem;*/
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 2rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  transform: rotateX(calc(var(--rX) * -0.1deg)) rotateY(calc(var(--rY) * -0.1deg));
+
+  background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("../images/mapa/mapaesc.jpg") no-repeat;
+  background-position: var(--bX) var(--bY);
+  background-size: 65rem 50rem;
+  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+
+  transition: transform .6s 1s;
+}
+
+.container::before,
+.container::after {
+  content: "";
+
+  width: 2rem;
+  height: 2rem;
+  border: 0px solid #fff;
+
+  position: absolute;
+  z-index: 2;
+
+  opacity: .3;
+  transition: .3s;
+}
+
+.container::before {
+  top: 2rem;
+  right: 2rem;
+
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+
+.container::after {
+  bottom: 2rem;
+  left: 2rem;
+
+  border-top-width: 0;
+  border-right-width: 0;
+}
+
+.container--active {
+  transition: none;
+}
+
+.container--2 {
+  filter: hue-rotate(80deg) saturate(140%);
+}
+
+.container--3 {
+  filter: hue-rotate(160deg) saturate(140%);
+}
+
+.container p {
+  color: hsla(0, 0%, 100%, .6);
+  font-size: 2.2rem;
+}
+
+.wrap:hover .container::before,
+.wrap:hover .container::after {
+  width: calc(100% - 10rem);
+  height: calc(100% - 10rem);
+}
+
+.abs-site-link {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: hsla(0, 0%, 0%, .6);
+  font-size: 1.6rem;
+}
+
+
+.mark1{
+    z-index: 3;
+    position: fixed;
+    top: 30px;
+    left: 200px;
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 3rem;
+
+}
+.mark2{
+    z-index: 3;
+        position: fixed;
+        top: 30px;
+        left: 220px;
+        color: rgba(255, 0, 0, 0.9);
+        font-size: 3rem;
+}
+.mark3{
+    z-index: 3;
+    position: fixed;
+    top: 85px;
+    left: 440px;
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 3rem;
+}
+.mark4{
+    z-index: 3;
+    position: fixed;
+    top: 60px;
+    left: 420px;
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 3rem;
+}
+.mark5{
+    z-index: 3;
+    position: fixed;
+    top: 95px;
+    left: 460px;
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 3rem;
+}
+.mark6{
+    z-index: 3;
+    position: fixed;
+    top: 120px;
+    left: 465px;
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 3rem;
+}
+.mark7{
+    z-index: 3;
+    position: fixed;
+    top: 111px;
+    left: 480px;
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 3rem;
+}
+.mark8{
+    z-index: 3;
+    position: fixed;
+    top: 140px;
+    left: 480px;
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 3rem;
+}
+.mark9{
+    z-index: 3;
+    position: fixed;
+    top: 100px;
+    left: 520px;
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 3rem;
+}
+.mark10{
+    z-index: 3;
+    position: fixed;
+    top: 110px;
+    left: 540px;
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 3rem;
+}
+
+.mark11{
+    z-index: 3;
+    position: fixed;
+    top: 130px;
+    left: 560px;
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 3rem;
+
+}
+.mark12{
+    z-index: 3;
+        position: fixed;
+        top: 125px;
+        left: 545px;
+        color: rgba(255, 0, 0, 0.9);
+        font-size: 3rem;
+}
+.mark13{
+    z-index: 3;
+    position: fixed;
+    top: 145px;
+    left: 280px;
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 3rem;
+}
+.mark14{
+    z-index: 3;
+    position: fixed;
+    top: 170px;
+    left: 285px;
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 3rem;
+}
+.mark15{
+    z-index: 3;
+    position: fixed;
+    top: 240px;
+    left: 240px;
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 3rem;
+}
+.mark16{
+    z-index: 3;
+    position: fixed;
+    top: 220px;
+    left: 210px;
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 3rem;
+}
+.mark17{
+    z-index: 3;
+    position: fixed;
+    top: 280px;
+    left: 220px;
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 3rem;
+}
+.mark18{
+    z-index: 3;
+    position: fixed;
+    top: 260px;
+    left: 240px;
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 3rem;
+}
+.mark19{
+    z-index: 3;
+    position: fixed;
+    top: 140px;
+    left: 330px;
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 3rem;
+}
+.mark20{
+    z-index: 3;
+    position: fixed;
+    top: 140px;
+    left: 320px;
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 3rem;
+}
