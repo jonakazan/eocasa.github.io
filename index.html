@@ -25,6 +25,8 @@
   <!-- Estilo-->
   <link href="css/style.css" rel="stylesheet">
 
+
+
   <style>div[class="disclaimer"]{display:none;}</style>
   <!--by JMK-->
 
@@ -80,6 +82,7 @@
     </div>
   </header>
   <!--header -->
+
 
           
 <!--navidad
@@ -546,9 +549,39 @@ navidad-->
 
 <!--modal video-->
 
+<!-- alert2-->
+
+<script type="text/javascript">
+ function redireccionar(){
+  document.getElementById('modalImagen').style.display='active';
+    //$("#modalImagen").trigger("click");
+    $("#modalImagen").modal("show");
+  } 
+  setTimeout ("redireccionar()", 1000); //tiempo expresado en milisegundos
+  </script>
+  <!-- alert2-->
+
+<!-- Modal imagen -->
+<!-- <button id="modalImagen" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#exampleModalCenter" style="visibility: hidden;">Modal</button> -->
+
+<div class="modal fade" id="modalImagen" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <img src="images/insc2025.jpeg" class="img-fluid" alt="" style="width:80%; height: auto;"> <!-- width="400" height="566" -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal imagen -->
+
+
 <style>
 .modal-dialog {
   text-align: center;
+  
 }
 </style>
 
@@ -583,7 +616,9 @@ navidad-->
   <script src="lib/easing/easing.js"></script>
   <script src="lib/push/push.min.js"></script>
   <script src="js/scripts.js"></script>
+
   <script src="contactform/contactform.js"></script>
+
   <div class="ultimo"></div>
 </body>
 </html>
