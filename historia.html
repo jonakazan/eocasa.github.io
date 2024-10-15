@@ -6,7 +6,6 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name='Escuela Provincial de Educacion tecnica Nº 3 "Polonia" '>
 
-
   <!--Favicon-->
   <link rel="shortcut icon" href="images/logos/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/logos/favicon.ico" type="image/x-icon">
@@ -23,9 +22,6 @@
 
   <!-- Estilo -->
   <link href="css/style.css" rel="stylesheet">
-
-  <style>div[class="disclaimer"]{display:none;}</style>
-  <!--by JMK-->
 
 </head>
 
@@ -71,40 +67,35 @@
        
       </div>
     </div>
-<!--
-probarsacar imagen de iframe
 
--->
     <script>
       window.addEventListener('message',function(event){
         if(event.data.event_id ==='abrir_modal'){
-          var value1 = event.data.v1;
-          var value2 = event.data.v2;                                                             
-          alert(value2);
-                                                              
-          
+          var value1 = event.data.data.v1;
+          var value2 = event.data.data.v2;
+          var value3 = event.data.data.v3; 
+          const textoFoto = document.getElementById("tituloFoto");
+          textoFoto.innerText = value2+' '+value3;
+          $('#img01').attr('src','historia/'+value1);                                                           
+          $('#mimodal').modal('show');
         }
       });
     </script>
 
 
-
     <!--  modal original dentro de iframe--> 
-
     <div id="mimodal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-          <span class="glyphicon glyphicon-remove cerrar" data-dismiss="modal"></span>
-          <img src="" class="modal-content recibir-imagen" width="100%" height="100%">
+      <div class="modal-dialog" >
+        <br>
+        <br><br><br>
+          <span class="glyphicon glyphicon-remove cerrar" data-dismiss="modal" style="float:right;color:black; text-shadow: 3px 1px 8px rgba(255,255,255,0.6);"></span>
+          <h2 id="tituloFoto" class="text-center" style="color:black;text-shadow: 3px 1px 8px rgba(255,255,255,0.6);"></h2>
+          <img src="" id="img01" class="modal-content recibir-imagen" width="100%" height="100%">
       </div>
   </div>
-
  <!-- modal original dentro de iframe --> 
 
-
-
     </section>
-
-
 
 
     <!--footer-->
