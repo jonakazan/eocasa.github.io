@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
       <!-- Estilo -->
     <link href="css/style.css" rel="stylesheet">
-    <style>div[class="disclaimer"]{display:none;}</style>
-    <!--by JMK-->
+
 </head>
 <body>
 
@@ -23,32 +22,22 @@
                                 <div class="col-md-6">
                                     <!--<img class="img-thumbnail" onclick="javascript:this.width=450;this.height=338" ondblclick="javascript:this.width=100;this.height=80" src="images/FOTO1.jpg" width="100"/>-->
                                
-                                    <img id="fotis" class="img-thumbnail imagen" src="images/FOTO1.jpg" />
+                                    <img id="fotis1" class="img-thumbnail imagen" src="images/FOTO1.jpg" />
 
-                                    <!--
-                                    probar sacar imagen de iframe
-  
-                                    -->
+
                                     <script>
-                                        document.getElementById('fotis').addEventListener('click', function(){
+                                        document.getElementById('fotis1').addEventListener('click', function(){
                                             window.parent.postMessage({
                                                                         event_id: 'abrir_modal',
                                                                             data: {
-                                                                                    v1: 'src="images/FOTO1.jpg"', 
-                                                                                    v2: '1954'
+                                                                                    v1: 'images/FOTO1.jpg', 
+                                                                                    v2: '1954',
+                                                                                    v3:'Escuela Industrial de la Nación'
                                                                                   }
                                                                       },'*');
                                         });
                                     </script>
 
-
-
-                                    <!--<img id="myImg" src="images/FOTO1.jpg" alt="" width="300" height="200">
-                                    <div id="popUp" class="modal">
-                                    <span class="close">&times;</span>
-                                    <img class="modal-content" id="img01">
-                                    <div id="caption"></div>
-                                    </div>-->  
                                 </div>
                                     <div class="col-md-6">
                                         <h2>1954</h2>
@@ -63,7 +52,19 @@
                         <div data-time="1961">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img class="img-thumbnail imagen" src="images/FOTO2.jpg">
+                                    <img id="fotis2" class="img-thumbnail imagen" src="images/FOTO2.jpg">
+                                    <script>
+                                        document.getElementById('fotis2').addEventListener('click', function(){
+                                            window.parent.postMessage({
+                                                                        event_id: 'abrir_modal',
+                                                                            data: {
+                                                                                    v1: 'images/FOTO2.jpg', 
+                                                                                    v2: '1961',
+                                                                                    v3:'E.N.E.T. Nº 1'
+                                                                                  }
+                                                                      },'*');
+                                        });
+                                    </script>
                                 </div>
                                 <div class="col-md-6">
                                     <h2>1961</h2>
@@ -79,8 +80,19 @@
                         <div data-time="1972">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img id="fotis" class="img-thumbnail imagen" style="width: 67%;" src="images/FOTO3A.jpg">
-                                    <!--<img class="img-thumbnail" src="images/FOTO3B.jpg" alt="">-->
+                                    <img id="fotis3" class="img-thumbnail imagen" style="width: 67%;" src="images/FOTO3A.jpg">
+                                    <script>
+                                        document.getElementById('fotis3').addEventListener('click', function(){
+                                            window.parent.postMessage({
+                                                                        event_id: 'abrir_modal',
+                                                                            data: {
+                                                                                    v1: 'images/FOTO3A.jpg', 
+                                                                                    v2: '1972',
+                                                                                    v3:'E.N.E.T. Nº 1 pasa a ser mixta'
+                                                                                  }
+                                                                      },'*');
+                                        });
+                                    </script>
                                 </div>
                                 <div class="col-md-6">
                                     <h2>1972</h2>
@@ -96,7 +108,19 @@
                         <div data-time="1973">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img id="fotis" class="img-thumbnail imagen" src="images/FOTO4.jpg">
+                                    <img id="fotis4" class="img-thumbnail imagen" src="images/FOTO4.jpg">
+                                    <script>
+                                        document.getElementById('fotis4').addEventListener('click', function(){
+                                            window.parent.postMessage({
+                                                                        event_id: 'abrir_modal',
+                                                                            data: {
+                                                                                    v1: 'images/FOTO4.jpg', 
+                                                                                    v2: '1973',
+                                                                                    v3:'Ciclo Superior Electromecánica'
+                                                                                  }
+                                                                      },'*');
+                                        });
+                                    </script>
                                 </div>
                                 <div class="col-md-6">
                                     <h2>1973</h2>
@@ -110,7 +134,19 @@
                         <div data-time="1974">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img class="img-thumbnail imagen" style="width: 71%;" src="images/FOTO5.jpg">
+                                    <img id="fotis5" class="img-thumbnail imagen" style="width: 71%;" src="images/FOTO5.jpg">
+                                    <script>
+                                        document.getElementById('fotis5').addEventListener('click', function(){
+                                            window.parent.postMessage({
+                                                                        event_id: 'abrir_modal',
+                                                                            data: {
+                                                                                    v1: 'images/FOTO5.jpg', 
+                                                                                    v2: '1974',
+                                                                                    v3:'E.N.E.T.  Nº 1 “POLONIA”'
+                                                                                  }
+                                                                      },'*');
+                                        });
+                                    </script>
                                 </div>
                                 <div class="col-md-6">
                                     <h2>1974</h2>
@@ -124,7 +160,19 @@
                         <div data-time="1979">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img class="img-thumbnail imagen" src="images/1979.jpg">
+                                    <img id="fotis6" class="img-thumbnail imagen" src="images/1979.jpg">
+                                    <script>
+                                        document.getElementById('fotis6').addEventListener('click', function(){
+                                            window.parent.postMessage({
+                                                                        event_id: 'abrir_modal',
+                                                                            data: {
+                                                                                    v1: 'images/1979.jpg', 
+                                                                                    v2: '1979',
+                                                                                    v3:'Ciclo Superior Construcciones'
+                                                                                  }
+                                                                      },'*');
+                                        });
+                                    </script>
                                 </div>
                                 <div class="col-md-6">
                                     <h2>1979</h2>
@@ -138,7 +186,19 @@
                         <div data-time="1993">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img class="img-thumbnail imagen" src="images/1993.jpg">
+                                    <img id="fotis7" class="img-thumbnail imagen" src="images/1993.jpg">
+                                    <script>
+                                        document.getElementById('fotis7').addEventListener('click', function(){
+                                            window.parent.postMessage({
+                                                                        event_id: 'abrir_modal',
+                                                                            data: {
+                                                                                    v1: 'images/1993.jpg', 
+                                                                                    v2: '1993',
+                                                                                    v3:'E.P.E.T. Nº 3'
+                                                                                  }
+                                                                      },'*');
+                                        });
+                                    </script>
                                 </div>
                                 <div class="col-md-6">
                                     <h2>1993</h2>
@@ -153,11 +213,20 @@
                         <div data-time="2004">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img class="img-thumbnail imagen"  src="images/FOTO6A.jpg">
-                                </div>
-                                
-                                    <!--<img class="img-thumbnail" src="images/FOTO6B.jpg" alt="">-->
-                                
+                                    <img id="fotis8" class="img-thumbnail imagen"  src="images/FOTO6A.jpg">
+                                    <script>
+                                        document.getElementById('fotis8').addEventListener('click', function(){
+                                            window.parent.postMessage({
+                                                                        event_id: 'abrir_modal',
+                                                                            data: {
+                                                                                    v1: 'images/FOTO6A.jpg', 
+                                                                                    v2: '2004',
+                                                                                    v3:'Bodas de oro de la Institución'
+                                                                                  }
+                                                                      },'*');
+                                        });
+                                    </script>
+                                </div>                                
                                 <div class="col-md-6">
                                     <h2>2004</h2>
                                     <p>
@@ -171,7 +240,19 @@
                         <div data-time="2007">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img class="img-thumbnail imagen" src="">
+                                    <img id="fotis9" class="img-thumbnail imagen" src="images/FOTO6B.jpg">
+                                    <script>
+                                        document.getElementById('fotis9').addEventListener('click', function(){
+                                            window.parent.postMessage({
+                                                                        event_id: 'abrir_modal',
+                                                                            data: {
+                                                                                    v1: 'images/FOTO6B.jpg', 
+                                                                                    v2: '2007',
+                                                                                    v3:'Inaugura el actual edificio de la escuela'
+                                                                                  }
+                                                                      },'*');
+                                        });
+                                    </script>
                                 </div>
                                 <div class="col-md-6">
                                     <h2>2007</h2>
@@ -185,7 +266,19 @@
                         <div data-time="2009">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img class="img-thumbnail imagen" src="">
+                                    <img id="fotis10" class="img-thumbnail imagen" src="images/2009.jpg">
+                                    <script>
+                                        document.getElementById('fotis10').addEventListener('click', function(){
+                                            window.parent.postMessage({
+                                                                        event_id: 'abrir_modal',
+                                                                            data: {
+                                                                                    v1: 'images/2009.jpg', 
+                                                                                    v2: '1994-2009',
+                                                                                    v3:'E.G.B. 3 - Polimodal - T.T.P.'
+                                                                                  }
+                                                                      },'*');
+                                        });
+                                    </script>
                                 </div>
                                 <div class="col-md-6">
                                     <h2>1994-2009</h2>
@@ -196,11 +289,23 @@
                                 </div>
                             </div>
                         </div>
-
+                        <!--
                         <div data-time="2009">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img class="img-thumbnail imagen" src="">
+                                    <img id="fotis11" class="img-thumbnail imagen" src="">
+                                    <script>
+                                        document.getElementById('fotis11').addEventListener('click', function(){
+                                            window.parent.postMessage({
+                                                                        event_id: 'abrir_modal',
+                                                                            data: {
+                                                                                    v1: 'images/FOTO6A.jpg', 
+                                                                                    v2: '2009',
+                                                                                    v3:'Ley Nº 26058/05 y Nº 26206/06'
+                                                                                  }
+                                                                      },'*');
+                                        });
+                                    </script>
                                 </div>
                                 <div class="col-md-6">
                                     <h2>2009</h2>
@@ -211,12 +316,24 @@
                                 </div>
                             </div>
                         </div>
-
+                        -->
                         
                         <div data-time="2011">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img class="img-thumbnail imagen" src="">
+                                    <img id="fotis12" class="img-thumbnail imagen" src="images/2011.jpg">
+                                    <script>
+                                        document.getElementById('fotis12').addEventListener('click', function(){
+                                            window.parent.postMessage({
+                                                                        event_id: 'abrir_modal',
+                                                                            data: {
+                                                                                    v1: 'images/2011.jpg', 
+                                                                                    v2: '2011',
+                                                                                    v3:'Titulaciones con validez nacional'
+                                                                                  }
+                                                                      },'*');
+                                        });
+                                    </script>
                                 </div>
                                 <div class="col-md-6">
                                     <h2>2011</h2>
@@ -234,7 +351,19 @@
                         <div data-time="2024">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img class="img-thumbnail imagen" src="images/2024.jpg">
+                                    <img id="fotis13" class="img-thumbnail imagen" src="images/2024.jpg">
+                                    <script>
+                                        document.getElementById('fotis13').addEventListener('click', function(){
+                                            window.parent.postMessage({
+                                                                        event_id: 'abrir_modal',
+                                                                            data: {
+                                                                                    v1: 'images/2024.jpg', 
+                                                                                    v2: '2024',
+                                                                                    v3:'70 Aniversario'
+                                                                                  }
+                                                                      },'*');
+                                        });
+                                    </script>
                                 </div>
                                 <div class="col-md-6">
                                     <h2>2024</h2>
@@ -244,40 +373,9 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                 </div>
             </div>
         </div>
-
-
-  
-
-
-
-<!--
-<a href="#modal-2" title="Abrir ventana modal" aria-label="Abrir ventana modal" role="button" data-modal-trigger class="btn btn--primary">Lanzar modal</a>
-
-
-<div data-modal data-modal-blocked id="mimodal" class="modal">
-  <div role="dialog" aria-hidden="true" aria-labelledby="modal-title3" aria-describedby="modal-body3" data-modal-dialog class="modal__dialog">
-    <div class="modal__content">
-      <div class="modal__header">
-        <button data-modal-close title="Cerrar ventana" aria-label="Cerrar ventana" class="modal__close">
-          <span aria-hidden="true" class="icon icon--close"></span>
-          <span class="icon-alt">Cerrar</span>
-        </button>
-        <h4 id="modal-title3" class="h4">Modal title</h4>
-      </div>
-      <div id="modal-body3" class="modal__body">
-        <span class="glyphicon glyphicon-remove cerrar" data-dismiss="modal"></span>
-        <img src="" class="modal-content recibir-imagen" width="100%" height="100%">
-      </div>
-    </div>
-  </div>
-</div>
--->
     
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.js"></script>
